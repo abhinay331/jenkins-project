@@ -14,9 +14,9 @@ job('NodeJS Docker example') {
     }
     steps {
         dockerBuildAndPublish {
-            repositoryName('gvenkat/nodejs-app')
+            repositoryName('abhinay331/nodejs-app')
             tag('${GIT_REVISION,length=9}')
-            registryCredentials('dockerhub')
+            registryCredentials('real')
             forcePull(false)
             forceTag(false)
             createFingerprints(false)
